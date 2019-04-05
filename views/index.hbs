@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/style.css">
+
+</head>
+
+<body>
+  {{>nav}}
+  <main>
+    <div class="container center-align">
+      <h1 class='teal-text'>{{ title }}</h1>
+      <div class="row">
+        <form action="" class="col s6 offset-s3">
+          <div class="row">
+            <div class="card-panel white">
+              <div class="input-field">
+                <input type="text" id='location'>
+                <label for="location">Location</label>
+              </div>
+              <button type='submit' class="waves-effect waves-light btn">GIMME!</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <div class="col s6 offset-s3">
+          <div class="row">
+            <div class="card-panel teal">
+              <p class="white-text" id='response'></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  {{>footer}}
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="./js/app.js"></script>
+
+</html>
